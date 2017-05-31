@@ -4,8 +4,9 @@
      grid-gap: 10px;
     margin:10px auto;
     grid-template-columns: 1fr 1fr 1fr ;
-    grid-template-rows: 100px 30px 300px 300px ;
-    grid-template-areas: "header header header"
+    grid-template-rows: 30px 400px 30px 300px ;
+    grid-template-areas:"tattoo tattoo tattoo"
+                      "header header header"
                        "a b c"
                         "d e f" 
         "g h i";
@@ -17,25 +18,39 @@
 }
 
 .mygrid>* {
-    border: 1px solid black;
+    border: 1px solid gray;
 }
 
 header {
     grid-area:header;
+    background-image: url(logo.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+   
+
 }
 
 .a {
     grid-area: a;
+   border-style: hidden; 
+   margin:auto;
+font-size: 25px; 
 }
 
 .b{
     grid-area: b;
+    border-style: hidden;
+    margin:auto;
+    font-size: 25px;
 }
 
 .c{
     grid-area: c;
+    border-style: hidden; 
+    margin:auto;
+    font-size: 25px;
     
-   
 
 
 .d{
