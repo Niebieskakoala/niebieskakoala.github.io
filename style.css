@@ -1,56 +1,169 @@
 .mygrid {
-    width: 600px;
+
+    width: 900px;
     display: grid;
      grid-gap: 10px;
     margin:10px auto;
     grid-template-columns: 1fr 1fr 1fr ;
-    grid-template-rows: 40px 20px 300px 300px ;
-    grid-template-areas: "header header header"
-                       "a b c"
-                        "article article article" 
-        "d d d";
+    grid-template-rows: 30px 400px 30px 300px ;
+    grid-template-areas:"tattoo tattoo tattoo"
+                      "header header header"
+                       "a b c";
+                 
 }
 
 
-.mygrid:hover {
-    opacity: 0.2;
-}
 
-.mygrid>* {
-    border: 1px dashed yellow;
-}
 
 header {
     grid-area:header;
+    background-image: url(logo.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+   
+
 }
 
 .a {
     grid-area: a;
-}
+    background: transparent;
+   border-style: hidden; 
+   margin:auto;
+    font-size: 25px; }
+
+    
+a:link{
+        color: black;
+        background-color: transparent;
+        text-decoration: none;  
+    text-shadow: 2px 1px hotpink; 
+
+
+}    
+   
+    
 
 .b{
     grid-area: b;
+    border-style: hidden;
+    margin:auto;
+    font-size: 25px;
+    
 }
 
 .c{
     grid-area: c;
-    
+    border-style: hidden; 
+    margin:auto;
+    font-size: 25px;
+text-decoration: none;
+    color:black;
     
 }
-article {
-    grid-area: article;}
-
-
+ 
 .d{
-    grid-area: d
-}
+    grid-area: tattoo;
+    border-style: hidden;
+    margin: auto;
+    font-size: 15px;
+    color: hotpink;
+     text-shadow: 2px 2px aquamarine;
     
-    
-    
-.mygrid:hover {
-    opacity: 0.2;
 }
 
-.mygrid>* {
-    border: 1px dashed yellow;
+.e{
+    font-size: 25px;
+    height: 50px;
+    width: 50px;
+    margin: auto;
+    margin-left: 50;
+   
+    
+}
+
+.f{
+    font-size: 25px;
+    height: 50px;
+    width:100px;
+    margin: auto;
+    margin-left: 40;
+       
+}
+
+.z{
+    font-size: 25px;
+    height: 50px;
+    width: 100px;
+    margin:auto;
+    margin-left: 40;
+    
+}
+
+
+.g{
+    background-image: url(zdjęcie.jpg);
+    width: 320px;
+    height:350px;
+    background-size: contain;  
+    margin:auto;
+}
+
+.h{
+   height: 300px;
+    width: 650px;
+    font-size: 15px;
+    margin:auto;
+   text-align: center;
+    text-transform: uppercase;
+     text-shadow: 1px 1px hotpink;
+    color:blue;
+}
+
+.i{
+    background-image: url(x.jpg);
+
+}
+
+.j{
+    background-image: url(2.jpg);
+  
+}
+
+.k{
+    background-image: url(3.jpg);
+
+}
+
+.l{
+    background-image: url(4.jpg);
+
+}
+
+.m{
+    background-image: url(5.jpg);
+
+}
+
+.n{
+    
+    background-image: url(6.jpg);
+   
+}
+
+.o{
+    background-image: url(7.jpg);
+
+}
+
+.p{    margin:auto;
+    width: 700px;
+    height:700px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+.home{
+    font-size: 20px;
 }
